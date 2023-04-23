@@ -1,6 +1,6 @@
 # Digital Adjustments
 
-A callable range accrual swaps (see https://finpricing.com/lib/EqCallable.html) can be priced using a single factor linear Gaussian model (LGM). Additional digital adjustments are required to capture the implied volatility smile observed in the market. 
+A callable range accrual swaps can be priced using a single factor linear Gaussian model (LGM). Additional digital adjustments are required to capture the implied volatility smile observed in the market. 
 
 A range accrual swap is composed of two interest rate streams, a structured stream and a funding stream. The funding stream is a set of standard floating cashflows paying LIBOR + a spread. The index for the floating cashflow resets in advance and pays in arrear according to standard market conventions. 
 
@@ -30,3 +30,6 @@ It is also very fast, a stochastic volatility term structure model would require
 
 As a side effect the method provides a mechanism for measuring skew and smile risk for a term-structure model that has no free parameters for skew and smile, so that even if no adjustment were necessary (i.e. the market happened to be normal) the technique has a value as a risk measure.
 
+Reference:
+
+https://finpricing.com/knowledge.html
